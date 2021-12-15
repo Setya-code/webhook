@@ -1,0 +1,17 @@
+[{
+"id": "local",
+"execute-command": "/root/webhooks/home/deploy.sh",
+"command-working-directory": "/var/www/setya/",
+"response-message": "Executing deploy script...",
+"trigger-rule": {
+"match": {
+"type": "payload-hash-sha1",
+"secret": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDgPCRLwHZOM11lE7Vw+ThTglG4pCCu0gsgAe4kkf/WErVkb7aBBQz49dOI9Y92C0ta8CtoMHy2D0/LzzpBGSIOMvmozEdgyuXZa4/ikt1hKJPeNFWqy6qtBBBKsjZGaxgas4Ec1CnnjhDv4jcejcdtaac2OL85SWqW4ErdJ8fkVkL9n4J86/ghVif65UWZWBp1II4IC77e0bwKPI70PpSifSdHQ7/JnyJUpxITNv22Usn5HDeZDy9LpkYG+G9iid7ZqqwxRPsheComnz6A6n6tsF8xnOXoV2d5hRPGdamBWlU4o+Cmt8BzMSr95Hhzh481lRjMFLJG1rUS6A6DDAq8aGg0/QTgz4cgpx0ZJYu2bhPWpWuCeP+HxEsKhZdOWGvvSOj5GJzURvGxIdjmLUqCemRANHY4qcSWoZA0hgmB3+FHV6JJxd6tuP5WLi2gx0Eo8h7afeCDpEUKOwvdfK3s72SCFaxk9ThTOuxwqUjRIcLh5dFljpkh2SlEFKRPwDs= ubuntu@ubuntu-open-vpn-server",
+"parameter": {
+"source": "header",
+"name": "X-Hub-Signature"
+}
+}
+}
+}]
+

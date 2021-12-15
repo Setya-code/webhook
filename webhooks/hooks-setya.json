@@ -1,0 +1,17 @@
+[{
+"id": "home",
+"execute-command": "/root/webhooks/setya/deploy.sh",
+"command-working-directory": "/var/www/setya/",
+"response-message": "Executing deploy script...",
+"trigger-rule": {
+"match": {
+"type": "payload-hash-sha1",
+"secret": "zfTHM/mb5oE2i3lgCGI+7IZTvg3Dga9g/F/NGc3nfVc",
+"parameter": {
+"source": "header",
+"name": "X-Hub-Signature"
+}
+}
+}
+}]
+
